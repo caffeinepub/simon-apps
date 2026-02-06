@@ -1,0 +1,66 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Landing page copy updates and remove GitHub social link",
+  "requirements": [
+    {
+      "id": "REQ-1",
+      "summary": "Update the Hero section headline to remove the word \"custom\".",
+      "acceptanceCriteria": [
+        "In frontend/src/components/HeroSection.tsx, the <h1> text is exactly \"Let's build your Business app\".",
+        "No other Hero section content is changed unintentionally."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/HeroSection.tsx",
+          "operation": "modify",
+          "description": "Update the Hero section <h1> copy from \"Let's build your custom Business app\" to exactly \"Let's build your Business app\" without changing any other hero content, layout, or animations."
+        }
+      ]
+    },
+    {
+      "id": "REQ-2",
+      "summary": "Update the Hero section subtitle to the provided new sentence.",
+      "acceptanceCriteria": [
+        "In frontend/src/components/HeroSection.tsx, the subtitle <p> text is exactly \"Deploy and host on the Internet Computer blockchain for next-level security and scalability\"."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/HeroSection.tsx",
+          "operation": "modify",
+          "description": "Replace the Hero section subtitle <p> text with exactly: \"Deploy and host on the Internet Computer blockchain for next-level security and scalability\". Keep all other hero content unchanged."
+        }
+      ]
+    },
+    {
+      "id": "REQ-3",
+      "summary": "Update the Services section intro paragraph to the provided exact sentence.",
+      "acceptanceCriteria": [
+        "In frontend/src/components/ServicesSection.tsx, the first paragraph sentence is exactly \"Simon Apps builds custom applications for small and businesses, designed to fit the way you work.\"",
+        "No other Services section paragraphs are changed."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/ServicesSection.tsx",
+          "operation": "modify",
+          "description": "Update only the first paragraph text to exactly: \"Simon Apps builds custom applications for small and businesses, designed to fit the way you work.\" Leave remaining paragraphs and all styling/animations intact."
+        }
+      ]
+    },
+    {
+      "id": "REQ-4",
+      "summary": "Remove the GitHub (cat) social icon/link from the Contact section social links.",
+      "acceptanceCriteria": [
+        "In frontend/src/components/ContactSection.tsx, the GitHub social <a> element (with aria-label \"GitHub\" and the SiGithub icon) is removed and no longer renders.",
+        "The remaining social icons/links (X and LinkedIn) still render and maintain the existing layout and styling."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/ContactSection.tsx",
+          "operation": "modify",
+          "description": "Remove the GitHub social link element and its SiGithub icon from the \"Connect with me\" row, preserving the layout/styling for the remaining X and LinkedIn links."
+        }
+      ]
+    }
+  ]
+}

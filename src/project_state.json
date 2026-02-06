@@ -1,0 +1,71 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 3,
+  "summary": "Personal portfolio website with header, hero, services cards (Simple/Page/Moderate/Tool/Complex/System), project showcase, and footer; currently updating copy and removing an unwanted logo/link.",
+  "architectural_notes": [],
+  "known_issues": [],
+  "isFixRequest": true,
+  "existing_features": [
+    {
+      "id": "feature-update-the-hero-section-headline-text-to-remove-the-word-custom-so-it-reads-exactly-let-s-build-your-business-app",
+      "title": "Update the Hero section headline text to remove the word \"custom\" so it reads exactly: \"Let's build your Business app\".",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-hero-section-subtitle-text-to-read-exactly-deploy-and-host-on-the-internet-computer-blockchain-for-next-level-security-and-scalability",
+      "title": "Update the Hero section subtitle text to read exactly: \"Deploy and host on the Internet Computer blockchain for next-level security and scalability\".",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-services-section-intro-paragraph-to-read-exactly-simon-apps-builds-custom-applications-for-small-and-businesses-designed-to-fit-the-way-you-work",
+      "title": "Update the Services section intro paragraph to read exactly: \"Simon Apps builds custom applications for small and businesses, designed to fit the way you work.\"",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-remove-the-cat-logo-link-from-the-connect-with-me-social-links-in-the-contact-section-remove-the-github-icon-link-entirely",
+      "title": "Remove the cat logo/link from the \"Connect with me\" social links in the Contact section (remove the GitHub icon/link entirely).",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Update hero title by removing the word \"custom\" from \"Let's build your custom Business app\"",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-2",
+      "summary": "Update hero subtitle text to: \"Deploy and host on the Internet Computer blockchain for next-level security and scalability\"",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-3",
+      "summary": "Update Services section text to: \"Simon Apps builds custom applications for small and businesses\"",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-4",
+      "summary": "Remove the cat logo/link from the \"Connect with me\" section",
+      "reqIds": [],
+      "status": "pending"
+    }
+  ],
+  "projectName": "Update landing page copy and remove GitHub (cat) link from Contact section",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}

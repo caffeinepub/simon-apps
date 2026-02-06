@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        --radius: 0.75rem;
+        
+        /* Light mode - Professional blue/white theme */
+        --background: 1 0 0;
+        --foreground: 0.15 0 0;
+        --card: 0.99 0 0;
+        --card-foreground: 0.15 0 0;
+        --popover: 1 0 0;
+        --popover-foreground: 0.15 0 0;
+        --primary: 0.45 0.15 250;
+        --primary-foreground: 1 0 0;
+        --secondary: 0.96 0 0;
+        --secondary-foreground: 0.15 0 0;
+        --muted: 0.94 0 0;
+        --muted-foreground: 0.45 0 0;
+        --accent: 0.96 0 0;
+        --accent-foreground: 0.15 0 0;
+        --destructive: 0.58 0.25 27;
+        --destructive-foreground: 1 0 0;
+        --border: 0.90 0 0;
+        --input: 0.90 0 0;
+        --ring: 0.45 0.15 250;
+        
+        /* Brand colors */
+        --brand-blue: 0.45 0.15 250;
+        --brand-cyan: 0.55 0.18 200;
+        --brand-purple: 0.50 0.20 280;
+    }
+
+    .dark {
+        /* Dark mode - Deep blue/black theme */
+        --background: 0.10 0.02 250;
+        --foreground: 0.95 0 0;
+        --card: 0.14 0.03 250;
+        --card-foreground: 0.95 0 0;
+        --popover: 0.14 0.03 250;
+        --popover-foreground: 0.95 0 0;
+        --primary: 0.65 0.22 220;
+        --primary-foreground: 0.95 0 0;
+        --secondary: 0.18 0.04 250;
+        --secondary-foreground: 0.95 0 0;
+        --muted: 0.18 0.04 250;
+        --muted-foreground: 0.65 0 0;
+        --accent: 0.20 0.05 250;
+        --accent-foreground: 0.95 0 0;
+        --destructive: 0.60 0.22 27;
+        --destructive-foreground: 0.95 0 0;
+        --border: 0.22 0.05 250;
+        --input: 0.22 0.05 250;
+        --ring: 0.65 0.22 220;
+        
+        /* Brand colors for dark mode */
+        --brand-blue: 0.65 0.22 220;
+        --brand-cyan: 0.70 0.24 200;
+        --brand-purple: 0.67 0.26 280;
+    }
+
+    * {
+        @apply border-border;
+    }
+    
+    body {
+        @apply bg-background text-foreground;
+        font-feature-settings: "rlig" 1, "calt" 1;
+    }
+    
+    html {
+        scroll-behavior: smooth;
+    }
+}
+
+@layer utilities {
+    .animate-gradient {
+        background-size: 200% 200%;
+        animation: gradient 8s ease infinite;
+    }
+    
+    @keyframes gradient {
+        0%, 100% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+    }
+}

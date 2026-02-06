@@ -1,0 +1,86 @@
+{
+  "kind": "build_request",
+  "title": "Update landing page copy and remove GitHub (cat) link from Contact section",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-1",
+      "text": "Update the Hero section headline text to remove the word \"custom\" so it reads exactly: \"Let's build your Business app\".",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "At hero section title, delete \"custom\" from \"Let's build your custom Business app\"."
+        ]
+      },
+      "acceptanceCriteria": [
+        "In frontend/src/components/HeroSection.tsx, the <h1> text is exactly \"Let's build your Business app\".",
+        "No other Hero section content is changed unintentionally."
+      ]
+    },
+    {
+      "id": "REQ-2",
+      "text": "Update the Hero section subtitle text to read exactly: \"Deploy and host on the Internet Computer blockchain for next-level security and scalability\".",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "At hero section subtitle, replace \"Deployed and hosted on the Internet Computer blockchain for exceptional security and scalability\" with \"Deploy and host on the Internet Computer blockchain for next-level security and scalability\"."
+        ]
+      },
+      "acceptanceCriteria": [
+        "In frontend/src/components/HeroSection.tsx, the subtitle <p> text is exactly \"Deploy and host on the Internet Computer blockchain for next-level security and scalability\"."
+      ]
+    },
+    {
+      "id": "REQ-3",
+      "text": "Update the Services section intro paragraph to read exactly: \"Simon Apps builds custom applications for small and businesses, designed to fit the way you work.\"",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "At Services section text, replace \"Simon Apps builds custom applications for small and medium-sized businesses\" with \"Simon Apps builds custom applications for small and businesses\"."
+        ]
+      },
+      "acceptanceCriteria": [
+        "In frontend/src/components/ServicesSection.tsx, the first paragraph sentence is exactly \"Simon Apps builds custom applications for small and businesses, designed to fit the way you work.\"",
+        "No other Services section paragraphs are changed."
+      ]
+    },
+    {
+      "id": "REQ-4",
+      "text": "Remove the cat logo/link from the \"Connect with me\" social links in the Contact section (remove the GitHub icon/link entirely).",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "Remove the cat logo/link at \"Connect with me\""
+        ]
+      },
+      "acceptanceCriteria": [
+        "In frontend/src/components/ContactSection.tsx, the GitHub social <a> element (with aria-label \"GitHub\" and the SiGithub icon) is removed and no longer renders.",
+        "The remaining social icons/links (X and LinkedIn) still render and maintain the existing layout and styling."
+      ]
+    }
+  ],
+  "constraints": [
+    "Do not edit files under frontend/src/components/ui (shadcn components); only compose them.",
+    "Do not edit immutable hook files listed in SYSTEM_CONTEXT (e.g., frontend/src/hooks/useInternetIdentity.ts, frontend/src/hooks/useActor.ts, frontend/src/main.tsx)."
+  ],
+  "nonGoals": [
+    "Do not change styling, layout, or animations beyond what is required to update the specified text and remove the specified social icon/link.",
+    "Do not add or modify backend functionality."
+  ],
+  "imageRequirements": {
+    "required": [],
+    "edits": []
+  }
+}

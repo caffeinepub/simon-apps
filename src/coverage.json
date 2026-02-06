@@ -1,0 +1,72 @@
+{
+  "kind": "coverage_report",
+  "version": "1.0",
+  "generatedAt": "2026-02-06T08:03:37.768Z",
+  "sources": {
+    "buildRequest": true,
+    "implementationPlan": true
+  },
+  "requirements": {
+    "total": 4,
+    "implemented": 4,
+    "items": [
+      {
+        "id": "REQ-1",
+        "summary": "Update the Hero section headline text to remove the word \"custom\" so it reads exactly: \"Let's build your Business app\".",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/HeroSection.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/HeroSection.tsx"
+        ]
+      },
+      {
+        "id": "REQ-2",
+        "summary": "Update the Hero section subtitle text to read exactly: \"Deploy and host on the Internet Computer blockchain for next-level security and scalability\".",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/HeroSection.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/HeroSection.tsx"
+        ]
+      },
+      {
+        "id": "REQ-3",
+        "summary": "Update the Services section intro paragraph to read exactly: \"Simon Apps builds custom applications for small and businesses, designed to fit the way you work.\"",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/ServicesSection.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/ServicesSection.tsx"
+        ]
+      },
+      {
+        "id": "REQ-4",
+        "summary": "Remove the cat logo/link from the \"Connect with me\" social links in the Contact section (remove the GitHub icon/link entirely).",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/ContactSection.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/ContactSection.tsx"
+        ]
+      }
+    ]
+  },
+  "changedFiles": [
+    "build-request.json",
+    "feature_evidence.json",
+    "frontend-file-summaries.txt",
+    "frontend-implementation-plan.json",
+    "frontend/src/components/ContactSection.tsx",
+    "frontend/src/components/HeroSection.tsx",
+    "frontend/src/components/ServicesSection.tsx",
+    "project_state.json",
+    "scratch/component-selection.json",
+    "spec.md",
+    "spec_vs_diff_report.json"
+  ]
+}

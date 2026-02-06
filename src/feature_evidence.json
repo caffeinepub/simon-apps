@@ -1,0 +1,77 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-update-the-hero-section-headline-text-to-remove-the-word-custom-so-it-reads-exactly-let-s-build-your-business-app",
+      "featureTitle": "Update the Hero section headline text to remove the word \"custom\" so it reads exactly: \"Let's build your Business app\".",
+      "files": [
+        "frontend/src/components/HeroSection.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-1"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-update-the-hero-section-subtitle-text-to-read-exactly-deploy-and-host-on-the-internet-computer-blockchain-for-next-level-security-and-scalability",
+      "featureTitle": "Update the Hero section subtitle text to read exactly: \"Deploy and host on the Internet Computer blockchain for next-level security and scalability\".",
+      "files": [
+        "frontend/src/components/HeroSection.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-2"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-update-the-services-section-intro-paragraph-to-read-exactly-simon-apps-builds-custom-applications-for-small-and-businesses-designed-to-fit-the-way-you-work",
+      "featureTitle": "Update the Services section intro paragraph to read exactly: \"Simon Apps builds custom applications for small and businesses, designed to fit the way you work.\"",
+      "files": [
+        "frontend/src/components/ServicesSection.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-3"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-remove-the-cat-logo-link-from-the-connect-with-me-social-links-in-the-contact-section-remove-the-github-icon-link-entirely",
+      "featureTitle": "Remove the cat logo/link from the \"Connect with me\" social links in the Contact section (remove the GitHub icon/link entirely).",
+      "files": [
+        "frontend/src/components/ContactSection.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-4"
+      ],
+      "confidence": "high"
+    }
+  ]
+}

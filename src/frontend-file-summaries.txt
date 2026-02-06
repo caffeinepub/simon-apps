@@ -1,0 +1,18 @@
+{
+  "frontend/src/App.tsx": "Main application component wrapping the app with QueryClientProvider and ThemeProvider, rendering HomePage with toast notifications (LanguageProvider removed).",
+  "frontend/src/pages/HomePage.tsx": "Single-page layout component orchestrating all sections with scroll-based active section tracking; removed pricing section from tracking list.",
+  "frontend/src/components/Navigation.tsx": "Sticky navigation bar with smooth scrolling, mobile menu, and active section highlighting; removed language toggle and pricing navigation item, replaced brand text with \"Simon Apps\".",
+  "frontend/src/components/HeroSection.tsx": "Hero section with parallax scrolling effect, main headline \"Let's build your Business app\", subtitle \"Deploy and host on the Internet Computer blockchain for next-level security and scalability\", three-step process cards, and Start Your Project CTA button.",
+  "frontend/src/components/ServicesSection.tsx": "Services section displaying three-paragraph narrative about Simon Apps building custom business applications for small and businesses, bridging the gap between standard software and operational needs.",
+  "frontend/src/components/PortfolioSection.tsx": "Project showcase section displaying three example projects with tier labels split into two separate horizontal chips with distinct colors per word, using externally hosted Unsplash images appropriate for each project type (business website, analytics dashboard, field service), titles, descriptions, and View Project CTA buttons.",
+  "frontend/src/components/AboutSection.tsx": "Two-column about section with \"About Me\" copy focusing on ICP enthusiasm and \"Why Internet Computer?\" description with four feature cards (Secure, Fast, Decentralized, Owned) using exact provided descriptions.",
+  "frontend/src/components/PricingSection.tsx": "Three-tier pricing cards with feature lists, gradient styling, and translated content including tier names and descriptions.",
+  "frontend/src/components/ContactSection.tsx": "Contact form with backend integration, exact copy for headings/paragraphs, \"Send Message\" button label, email \"contact@simonapps.com\", and \"Connect with me\" social label with X and LinkedIn links only (GitHub removed).",
+  "frontend/src/components/Footer.tsx": "Footer component with exact attribution text \"© 2026. Built withusingcaffeine.ai\" (preserving the missing space as provided).",
+  "frontend/src/hooks/useQueries.ts": "React Query hook for submitting contact form messages to the backend with mutation handling.",
+  "frontend/src/index.css": "Global styles with OKLCH color system for both light and dark modes with professional blue/white theme and smooth animations.",
+  "frontend/tailwind.config.js": "Tailwind configuration extended with brand colors (blue, cyan, purple) and custom design tokens matching the business theme.",
+  "frontend/src/hooks/useInView.ts": "Custom React hook that uses Intersection Observer API to detect when an element enters the viewport, accepting RefObject with nullable Element type and optional once-only triggering.",
+  "frontend/index.html": "HTML entry point with updated page title \"Simon Apps - Business Website\" and root div for React mounting.",
+  "frontend/src/contexts/LanguageContext.tsx": "Language context provider with English and Dutch translations, toggle functionality, and translation helper function; defaults to Dutch per specification."
+}
